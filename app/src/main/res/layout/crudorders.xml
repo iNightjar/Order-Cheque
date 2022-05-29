@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/ic_fsplash"
+    tools:context="sqllite.crud.crudOrders">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Details Below"
+        android:textStyle="bold|italic"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Customer Name"
+        android:textSize="24dp"
+        android:background="@drawable/textview_border"
+        android:layout_below="@+id/textTitle"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardNumber"
+        android:hint="Card Number"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:background="@drawable/textview_border"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardExpiry"
+        android:hint="Card Expiry"
+        android:textSize="24dp"
+        android:background="@drawable/textview_border"
+        android:layout_below="@+id/cardNumber"
+        android:inputType="textPersonName"
+        android:padding="4dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPin"
+        android:hint="Card Pin"
+        android:textSize="24dp"
+        android:background="@drawable/textview_border"
+        android:layout_below="@+id/cardExpiry"
+        android:inputType="textPersonName"
+        android:padding="4dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:hint="Total Pay"
+        android:textSize="24dp"
+        android:background="@drawable/textview_border"
+        android:layout_below="@+id/cardPin"
+        android:inputType="textPersonName"
+        android:padding="4dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insertData"
+        android:textSize="24dp"
+        android:text="Insert Order"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/total"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateData"
+        android:textSize="24dp"
+        android:text="Update Order"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/insertData"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteData"
+        android:textSize="24dp"
+        android:text="Delete Order"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/updateData"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewData"
+        android:textSize="24dp"
+        android:text="View Orders"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/deleteData"
+        />
+
+</RelativeLayout>
